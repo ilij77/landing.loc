@@ -26,6 +26,6 @@ Route::get('/page',function (){
     return;
 });
 Route::any('/comments',function(){
-//print_r($_POST);
+print_r($_POST);
     echo 'dfgfd';
 });
