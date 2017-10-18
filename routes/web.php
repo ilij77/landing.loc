@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/page',function (){
+    echo '<pre>';
+   // print_r($_ENV);
+    echo config('app.locale');
+    echo Config::set('app.locale','ru');
+    echo Config::get('app.locale');
+    echo '</pre>';
+    echo env('APP_ENV');
+    return;
+});
+Route::any('/comments',function(){
+//print_r($_POST);
+    echo 'dfgfd';
+});
