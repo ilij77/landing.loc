@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_field() }}">
     <title>Title</title>
 </head>
 <body>
 <form action="/comments" method="post">
+
     Имя:
     <input type="text" name="name"/><br />
     Коментарий:<br />
